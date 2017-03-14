@@ -1,0 +1,505 @@
+{
+    "__type__": "Deck", 
+    "children": [], 
+    "crowdanki_uuid": "9b636dbd-0868-11e7-87d6-c46e1f132962", 
+    "deck_config_uuid": "9b64d878-0868-11e7-a130-c46e1f132962", 
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig", 
+            "autoplay": true, 
+            "crowdanki_uuid": "9b64d878-0868-11e7-a130-c46e1f132962", 
+            "dyn": false, 
+            "lapse": {
+                "delays": [
+                    10
+                ], 
+                "leechAction": 0, 
+                "leechFails": 8, 
+                "minInt": 1, 
+                "mult": 0.0
+            }, 
+            "maxTaken": 60, 
+            "name": "Default", 
+            "new": {
+                "LBEIMinAfter": 4, 
+                "LBEIMinBefore": 4, 
+                "LBGIMinAfter": 1, 
+                "LBGIMinBefore": 1, 
+                "bury": true, 
+                "delays": [
+                    1, 
+                    10
+                ], 
+                "initialFactor": 2360, 
+                "ints": [
+                    1, 
+                    4, 
+                    7
+                ], 
+                "order": 1, 
+                "perDay": 40, 
+                "separate": true
+            }, 
+            "replayq": true, 
+            "rev": {
+                "bury": true, 
+                "ease4": 1.3, 
+                "fuzz": 0.05, 
+                "ivlFct": 1.0, 
+                "maxIvl": 36500, 
+                "minSpace": 1, 
+                "perDay": 120
+            }, 
+            "timer": 0
+        }
+    ], 
+    "desc": "", 
+    "dyn": 0, 
+    "extendNew": 10, 
+    "extendRev": 50, 
+    "media_files": [], 
+    "name": "Ethereum", 
+    "note_models": [
+        {
+            "__type__": "NoteModel", 
+            "crowdanki_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}", 
+            "flds": [
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Text", 
+                    "ord": 0, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }, 
+                {
+                    "font": "Arial", 
+                    "media": [], 
+                    "name": "Extra", 
+                    "ord": 1, 
+                    "rtl": false, 
+                    "size": 20, 
+                    "sticky": false
+                }
+            ], 
+            "latexPost": "\\end{document}", 
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n", 
+            "name": "Cloze", 
+            "sortf": 0, 
+            "tags": [], 
+            "tmpls": [
+                {
+                    "afmt": "{{type:cloze:Text}}\n\n<div style='font-family: Arial; font-size: 20px; color: #00FF7F'>{{Extra}}</div>", 
+                    "bafmt": "", 
+                    "bqfmt": "", 
+                    "did": null, 
+                    "name": "Cloze", 
+                    "ord": 0, 
+                    "qfmt": "{{cloze:Text}}<br>\n{{type:cloze:Text}}\n\n"
+                }
+            ], 
+            "type": 1, 
+            "vers": []
+        }
+    ], 
+    "notes": [
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br />{{c1::Ethereumjs-util}} is a low-level helper library that provides low-level utility functions that assist in creating new ethereum wallet addresses from private keys.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "CIuZgzMah+", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />Any {{c1::64}} character string is a valid Ethereum {{c1::private}} key.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "pJqZeR{nbI", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>**corresponds to video 2**</div><div><br /></div>The only invalid private key in Ethereum is a 64-character string of {{c1::zeroes}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "Ks[N+emUdM", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />Capitalization {{c1::doesn't}} matter for ethereum private keys.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "O:RX,6VB(?", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />A deterministic function maps a {{c1::private}} key to a public key every time.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "n+9N@mMU}@", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<div><br />The last 40 digits of the public key generated when running the deterministic wallet generation function with a valid private key as input are what is called the {{c1::wallet address}}</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "lcetR}9@>9", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />A string preceded by '0x' is meant to be interpreted as a string in {{c1::hexadecimal}} format. The '0x' is not actually part of the data itself.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "EC:#Lv,7Ts", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />A private key maps {{c1::deterministically}} to a public key, but it is mathematically unknown how to compute a private key from a public key", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "M[8W.(`fwi", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />Any {{c1::40}} digit {{c1::hexadecimal}} string is a valid ethereum wallet address", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "C>S7!JY#y[", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />When Ethereum was first conceived, the core members had to find a workaround to the {{c1::halting}} problem.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "r=W>JjCtEL", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />The Ethereum {{c1::Virtual}} Machine allows {{c1::arbitrary}} computation of another person's code.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "dBS|0r7q.x", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />It is impossible to statically analyze code and determine whether or not it will {{c1::terminate}} in finite time. This lead to the very real possibility that someone could issue {{c1::DDOS}} attacks against the Ethereum network by issuing infinite loops which peers would then attempt to determine whether the loops were infinite, wasting computational resources.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "qCT:`U4hxH", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />Ethereum created what's referred to as \"{{c1::gas}}\" as a workaround to the halting problem.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "EERMVE<:D[", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />The code that runs the {{c1::contracts}} on the Ethereum network is the {{c1::bytecode}} of the Ethereum Virtual Machine.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "vuycBG.d&v", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />Contracts written in languages like Solidity are compiled down to EVM {{c1::OPCODES}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "d>C`Jj/A1y", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<div><br />The full list of EVM OPCODES are available in the Ethereum {{c1::yellowpaper}}</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "JMGpULR!:#", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />Each {{c1::OP}}CODE that the EVM can execute has a fixed amount of {{c1::gas}} associated with it", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "qt^,wx$L:+", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<div><br />The {{c1::gas}} execution cost of an OPCODE can also be thought of as a fee per computational step executed on the network.</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "J|uB`OMXaj", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br />Taking the SHA3 hash of a string costs a fixed {{c1::30}} gas on the Ethereum network.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "klXnV9cMxW", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />Generating a transaction on the ethereum network costs {{c1::21000}} gas", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "jM&uXi}4o[", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />It is the {{c1::burden}} of whomever is {{c1::calling}} a function within the Ethereum network to pay the computational cost of executing that function. This shields the Ethereum network from DDOS attacks.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "uduSZR1S{D", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 3**<br /><br />The amount of {{c1::gas}} per computational step is fixed, but the amount of ether one pays for the gas is not.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "F]gSX|$:4U", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />The exchange rate of gas to {{c1::ether}} is determined by {{c1::miners}} on the Ethereum network.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "Igd|vn;S}:", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />How would I figure out what the ether equivalent of 20 gwei would be?<br /><br />const Web3 = require('web3')<br /><br />const web3 = new Web3()<br /><br />const twentyWei = web3.to{{c1::Wei}}(20, '{{c1::gwei}}')<br /><br />web3.{{c1::from}}Wei(twentyWei, '{{c1::ether}}')<br /><br /><br /><div><br /></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "n6]6^p=oy!", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 2**<br /><br />Ethereumjs-tx is a low-level utility library for creating and making {{c1::transactions}}.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "GPdlHj8F9X", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />Testrpc comes preseeded with {{c1::10}} ethereum accounts. Each account holds 100 ether", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "M$iHJJ8]Zr", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br /><br />How would I ask for the balance of an Ethereum account using the web3 api?<br /><br /><code class=\"myCodeClass\">var ethAddress ='0x3eaddeb18f4939bee553b2a86a8f656508a40216'&nbsp;</code><div><br /><div><code class=\"myCodeClass\">web3.{{c1::eth}}.get{{c1::Balance}}(ethAddress)<br /><br />Now, how would I convert that balance to ether?<br /><br /></code></div></div><div><code class=\"myCodeClass\">web3.{{c1::fromWei}}(web3.{{c1::eth}}.get{{c1::Balance}}(ethAddress), '{{c1::ether}}')</code></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "I=cA?!4%;S", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />How would I send an amount of 100 ether from one account to another account?<br /><br />web3.eth.{{c1::sendTransaction}}({ <br />&nbsp; &nbsp; {{c1::from}}: acct1, <br />&nbsp; &nbsp; {{c1::to}}: acct2,&nbsp;<div>&nbsp; // the amount of ether one wants to send, specified in what?<br />&nbsp; &nbsp; value: web3.to{{c1::Wei}}(100, '{{c1::ether}}'),<br />&nbsp; &nbsp;// this property denotes the amount of gas you want to authenticate for this transaction. What is the exact execution cost for sending a transaction?<br />&nbsp; &nbsp; gas{{c1::Limit}}: {{c1::21000}},</div><div>&nbsp; // this property sets the gas price for the transaction in wei. When working on the mainnet, this property needs to be set to atleast the market value, the price that miners have collectively agreed upon</div><div>&nbsp; &nbsp; gasPrice: 20000000000 // this is equivalent to 20 gwei<br />})<br /><br /></div><div>The return value of this operation would be a transaction {{c1::hash}}.</div><div><br /></div><div><br /><br /></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "zlt<<ZXaVV", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />Given a transaction hash TX_HASH, how would I use it to get more information about that transaction?<br /><br />web3.{{c1::eth}}.get{{c1::Transaction}}(TX_HASH)<br /><br />=&gt;<br /><br /><div>&nbsp;{</div><div>&nbsp; &nbsp; hash: '0x909b9104aa6ebc1d48ae82ddd2b5c28e33d060f159538b9816089ecc8bcf39df',<br /></div><div>&nbsp; &nbsp; nonce: 0,<br />&nbsp; &nbsp;// the blockHash is the hash of the block the transaction was mined in</div><div>&nbsp; &nbsp; blockHash: '0xc29e20ffc78d1b1eb7c8b8445406af396d35591e0f858a3a127c3bc03910c1d0',</div><div>&nbsp; // block mined in</div><div>&nbsp; &nbsp; blockNumber: 1,</div><div><br /></div><div>&nbsp; &nbsp; transactionIndex: 0,</div><div>&nbsp; &nbsp; from: '0xd2cada0e6b95279537481324c4f192c454d1adee',</div><div>&nbsp; &nbsp; to: '0x9ee602897520075de46975d0db16310db1f9071b',</div><div>&nbsp; &nbsp; value: { [String: '10000000000000000000'] s: 1, e: 19, c: [ 100000 ] },</div><div>&nbsp; &nbsp; gas: 90000,</div><div>&nbsp; &nbsp; gasPrice: { [String: '20000000000'] s: 1, e: 10, c: [ 20000000000 ] },</div><div>&nbsp; // arbitrary input data given to the transaction</div><div>&nbsp; &nbsp; input: '0x0'&nbsp;</div><div>&nbsp; }</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "K|uWzm`f?b", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />The nonce is a mechanism to ensure that {{c1::duplicate}} transactions are not sent to the ethereum blockchain.<br /><br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "N6[7p#}eO-", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />The nonce is an auto-incrementing number that needs to be {{c1::unique}} from an address.One address can only send a transaction with the same nonce once.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "Jy=pxPSaIS", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 4**<br /><br />The web3 javascript library defines an {{c1::interface}} into the underlying ethereum protocol methods.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "hC1)D+KZWG", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "The sendTransaction method already knows how to interoperate with your private keys when testrpc is created, thus, no data is required to be {{c1::signed}} manually. This 'magical' automatic convenience behavior may be unwanted-- for example, if you wanted to send a transaction offline, you might sign a transaction with your private key, and then transfer that to an online computer and then send it out for better security", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "kbe}>)/VB|", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Anki-DecypherTV",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:daniphilia/Anki-DecypherTV.git",
+  "author": "daniphilia <dani.philia@gmail.com>",
+  "license": "MIT"
+}
