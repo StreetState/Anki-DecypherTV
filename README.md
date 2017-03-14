@@ -13,7 +13,6 @@
 
 **NOTE:** To browse the list of/install add-ons (plugins), select the Tools>Add-ons>Browse & Install menu item. You can also use Tools>Add-ons to check which add-ons are installed.
 
-4. Fork this repository
 
 #### How to upload changes
 
@@ -57,5 +56,5 @@ Select the deck (**note**: export of "All decks" is not supported, you need to s
 After pressing the Export button - select directory where the result should be stored.
 
 ## Import
-To perform the import go to menu File>"CrowdAnki: Import from disk" and select the directory where the deck is stored.
+To perform the import go to menu File>"CrowdAnki: Import from disk" and select the directory where the deck is stored. In this case, the deck is stored in the 'Ethereum' folder as a json object
 
