@@ -37,6 +37,8 @@ When you want to upload changes you've made to Github, you need to:
     git push origin master
     ```
 
+6. Issue a pull request on github.com on the main repo (daniphilia/Anki-DecypherTV)
+
 If you just want to **get latest changes from other people** - you need to perform only steps 1 and 2.
 
 
