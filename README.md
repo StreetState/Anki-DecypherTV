@@ -5,6 +5,10 @@
 1. Fork this repository and clone your own local copy onto your computer
 
 2. Download Anki for your operating system [here](https://apps.ankiweb.net/)
+  (OPTIONAL-- highly encouraged though)
+  2a. Read about why Anki is useful and a great awesome thing [here](https://medium.freecodecamp.com/use-spaced-repetition-with-anki-to-learn-to-code-faster-7c334d448c3c#.4y2qv8ea5)
+  2b. Install the [video speed controller](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk/reviews) chrome extension. Lets you speed up, slow down, rewind, fast forward videos with keyboard shortcuts. Awesome.
+
 
 3. Install the [CrowdAnki plugin](https://ankiweb.net/shared/info/1788670778)
  
