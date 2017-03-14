@@ -109,7 +109,7 @@
             "__type__": "Note", 
             "data": "", 
             "fields": [
-                "**corresponds to video 2**<br />{{c1::Ethereumjs-util}} is a low-level helper library that provides low-level utility functions that assist in creating new ethereum wallet addresses from private keys.", 
+                "**corresponds to video 2**<div><br />{{c1::Ethereumjs-util}} is a low-level helper library that provides low-level utility functions that assist in creating new ethereum wallet addresses from private keys.</div>", 
                 ""
             ], 
             "flags": 0, 
@@ -445,7 +445,7 @@
             "__type__": "Note", 
             "data": "", 
             "fields": [
-                "**corresponds to video 4**<br /><br />Given a transaction hash TX_HASH, how would I use it to get more information about that transaction?<br /><br />web3.{{c1::eth}}.get{{c1::Transaction}}(TX_HASH)<br /><br />=&gt;<br /><br /><div>&nbsp;{</div><div>&nbsp; &nbsp; hash: '0x909b9104aa6ebc1d48ae82ddd2b5c28e33d060f159538b9816089ecc8bcf39df',<br /></div><div>&nbsp; &nbsp; nonce: 0,<br />&nbsp; &nbsp;// the blockHash is the hash of the block the transaction was mined in</div><div>&nbsp; &nbsp; blockHash: '0xc29e20ffc78d1b1eb7c8b8445406af396d35591e0f858a3a127c3bc03910c1d0',</div><div>&nbsp; // block mined in</div><div>&nbsp; &nbsp; blockNumber: 1,</div><div><br /></div><div>&nbsp; &nbsp; transactionIndex: 0,</div><div>&nbsp; &nbsp; from: '0xd2cada0e6b95279537481324c4f192c454d1adee',</div><div>&nbsp; &nbsp; to: '0x9ee602897520075de46975d0db16310db1f9071b',</div><div>&nbsp; &nbsp; value: { [String: '10000000000000000000'] s: 1, e: 19, c: [ 100000 ] },</div><div>&nbsp; &nbsp; gas: 90000,</div><div>&nbsp; &nbsp; gasPrice: { [String: '20000000000'] s: 1, e: 10, c: [ 20000000000 ] },</div><div>&nbsp; // arbitrary input data given to the transaction</div><div>&nbsp; &nbsp; input: '0x0'&nbsp;</div><div>&nbsp; }</div>", 
+                "**corresponds to video 4**<br /><br />Given a transaction hash TX_HASH, how would I use it to get more information about that transaction?<br /><br />web3.{{c1::eth}}.get{{c1::Transaction}}(TX_HASH)<br /><br />=&gt;<br /><br /><div>&nbsp;{</div><div>&nbsp; &nbsp; hash: '0x909b9104aa6ebc1d48ae82ddd2b5c28e33d060f159538b9816089ecc8bcf39df',<br /></div><div>&nbsp; &nbsp; nonce: 0,<br />&nbsp; &nbsp;// the blockHash is the hash of the block the transaction was mined in</div><div>&nbsp; &nbsp; blockHash: '0xc29e20ffc78d1b1eb7c8b8445406af396d35591e0f858a3a127c3bc03910c1d0',</div><div>&nbsp; // mined in</div><div>&nbsp; &nbsp; blockNumber: 1,</div><div><br /></div><div>&nbsp; &nbsp; transactionIndex: 0,</div><div>&nbsp; &nbsp; from: '0xd2cada0e6b95279537481324c4f192c454d1adee',</div><div>&nbsp; &nbsp; to: '0x9ee602897520075de46975d0db16310db1f9071b',</div><div>&nbsp; &nbsp; value: { [String: '10000000000000000000'] s: 1, e: 19, c: [ 100000 ] },</div><div>&nbsp; &nbsp; gas: 90000,</div><div>&nbsp; &nbsp; gasPrice: { [String: '20000000000'] s: 1, e: 10, c: [ 20000000000 ] },</div><div>&nbsp; // arbitrary input data given to the transaction</div><div>&nbsp; &nbsp; input: '0x0'&nbsp;</div><div>&nbsp; }</div>", 
                 ""
             ], 
             "flags": 0, 
@@ -498,6 +498,30 @@
             ], 
             "flags": 0, 
             "guid": "kbe}>)/VB|", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>**conforms to video 4**</div><div><br /></div><div>Ethereumjs-tx requires data structures to be passed in as {{c1::buffers}} instead of strings.</div><br />Ethereumjs-tx takes in a raw transaction data structure, which is a javascript object with key value pairs where every integer is encoded in hexadecimal before the raw transaction data structure is signed.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "AUP8h6Kpgu", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "What does a valid raw transaction data structure look like?<br /><br />var rawTx = {<br />&nbsp; &nbsp; nonce: web3.to{{c1::Hex}}(web3.eth.getTransaction{{c1::Count}}(acct1)),<div>&nbsp; &nbsp; to: acct2,</div><div>&nbsp; &nbsp; gasPrice: web3.toHex(20000000000),</div><div>&nbsp; &nbsp; gasLimit: web3.toHex(21000),<br />&nbsp; &nbsp; value: web3.toHex(web3.toWei(25, 'ether')),</div><div>&nbsp; &nbsp;// the data property is a string of any arbitrary data that serves as {{c1::meta}}data for the transaction</div><div>&nbsp; &nbsp; data: \"\"<br />}<br /><br /><br /></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "h;lm<>8#=(", 
             "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
             "tags": []
         }
