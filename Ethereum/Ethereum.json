@@ -37,7 +37,7 @@
                     7
                 ], 
                 "order": 1, 
-                "perDay": 40, 
+                "perDay": 100, 
                 "separate": true
             }, 
             "replayq": true, 
@@ -522,6 +522,318 @@
             ], 
             "flags": 0, 
             "guid": "h;lm<>8#=(", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**miscellaneous**<br /><br />Blocks have total gas limits to prevent runaway {{c1::computation}}/keep the network {{c1::decentralized}}.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "tNv>o6prMV", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 7**<br /><br />The value proposition of using Ethereum over Bitcoin is the ability to deploy arbitrary computation onto the network in the form of {{c1::smart contracts}}.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "i&6fMS9X$Z", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 7**<br /><br />Ethereum smart contracts are ultimately just EVM {{c1::OPCODES}} as defined in the Ethereum yellowpaper.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "ub+/?JFXFQ", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 7**<br /><br />An abi defines the public-facing {{c1::interface}} of your contract.<br />An abi enables users of a contract to know how to call into it and what methods are available to them.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "hQM6s)FwH4", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 7**<br /><br />An abi is needed when creating a contract object through the {{c1::web3}} object.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "C6S2suixC&", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 7**<br /><br />There are two types of ethereum addresses: ethereum {{c1::accounts}} and {{c1::contract}} addresses<br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "KXNX7alTR%", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>contract HelloWorld {</div><div>&nbsp; &nbsp; function displayMessage() {{c1::constant}} returns (string) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; return \"Hello from a smart contract\";</div><div>&nbsp; &nbsp; }</div><div>}<br /><br />A function declaration with a {{c1::constant}} keyword before the returns keyword in Solidity states that a function will not modify state on the Ethereum network in any way.<br /><br />No matter how many times you run the contract, the function will always return its specified return value, and it will not affect other contracts on the network.</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "eILIbeBz$+", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>***corresponds to video 7***<br /><br />Given this contract:<br /><br />contract HelloWorld {</div><div>&nbsp; &nbsp; function displayMessage() constant returns (string) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; return \"Hello from a smart contract\";</div><div>&nbsp; &nbsp; }</div><div>}<br /><br />deployed on the Ethereum network, stored in a variable HelloWorld, how would you invoke it?<br /><br />HelloWorld{{c1::.displayMessage}}.{{c1::call()}}</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "M#Fmk!eK8`", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 7**<br /><br />Functions with a {{c1::constant}} return value don't need to query the network, and are cached locally so that they can be returned in real-time.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "k@]-E(+Cu?", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>**corresponds to video 8**<br /><br />Solidity is a {{c1::statically}} typed language.</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "iJ5c$JSSTE", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**corresponds to video 8**<br /><br />Contracts can have {{c1::state}} that they store inside themselves and persist on the blockchain", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "p2:64x}z{>", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "When a contract variable is declared {{c1::public}}, an accessor method is created that allows anyone that knows the {{c1::address}} of the contract to query for the state of the variable at any given point in time", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "EFq8*r>vm@", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "A function that has the same name as the {{c1::contract}} within which it is defined is a constructor. <br /><br />A constructor function is a function that runs only {{c1::once}} upon the creation of a contract.&nbsp;", 
+                "<br />Constructor functions are handy when you want to do some sort of initialization"
+            ], 
+            "flags": 0, 
+            "guid": "QT;;>.,j2e", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "There's a special object in Solidity called the '{{c1::msg}}' object. The 'msg' object contains {{c1::information}} about the transaction that is {{c1::calling}} into the current contract.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "Q2%rS&.C4p", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 8<br /><br />'msg object continued'<br /><br />In the case of a constructor function, the transaction that will be calling into the constructor function will be the transaction that's creating the {{c1::function}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "zJbr>@qGLz", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 8<div><br />You can get access to the ethereum address of whoever is calling a contract through the {{c1::msg}}.sender property<br /><br />given a contract Escrow, how would I set the buyer variable to the address of the person calling the contract?<br /><br /><div>{{c1::contract}} Escrow {</div><div><br /></div><div>&nbsp; &nbsp; address public buyer;</div><div>&nbsp; &nbsp; address public seller;</div><div>&nbsp; &nbsp; address public arbiter;</div><div>&nbsp; &nbsp; function Escrow() {</div><div>&nbsp; &nbsp; &nbsp; {{c1::buyer}} = msg{{c1::.sender}} &nbsp; &nbsp;</div><div>&nbsp; &nbsp; }</div><div><br /></div><div>}</div></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "qH@,3Uiro]", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 8<br /><br />A constructor function can take parameters. A constructor function's parameters are statically typed, and are {{c1::defined}} when the contract is created.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "j|UW+X?Aay", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "A contract address can store a {{c1::balance}} in ether the same way a regular ethereum address can.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "p_(Cg?JfXS", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div>Video 8<br /><br />What's the problem with the way this contract is written?<br /><br />contract Escrow {</div><div><br /></div><div>&nbsp; &nbsp; address public buyer;</div><div>&nbsp; &nbsp; address public seller;</div><div>&nbsp; &nbsp; address public arbiter;</div><div><br /></div><div>&nbsp; &nbsp; function Escrow(address _seller, address _arbiter) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; buyer = msg.sender;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; seller = _seller;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; arbiter = _arbiter;</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp; // &nbsp;when called, this function will send the current balance in the Escrow contract to the seller</div><div>&nbsp; &nbsp; function payoutToSeller() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // send the amount of ether defined to the account that's calling it</div><div>&nbsp; &nbsp; &nbsp; &nbsp; seller.send(this.balance)</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp; // when called this function will send the current balance in the Escrow contract to the buyer</div><div>&nbsp; &nbsp; function refundToBuyer() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // this refers to the balance of ether in the contract</div><div>&nbsp; &nbsp; &nbsp; &nbsp; buyer.send(this.balance)</div><div>&nbsp; &nbsp; }</div><div><br /></div><div>}<br /><br />As it currently stands, anyone with access to the {{c1::abi}} can {{c1::call}} these functions and send the money, so, this isn't very secure.<br /><br />Take a moment to think about an adequate solution.<br /><br />How would you fix it?<br /></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "q[Z(IZ(jH.", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 9<br /><br />A finite state machine is a general programming concept for modelling {{c1::state}}ful domain objects. The idea is that an instance of an object can exist in exactly {{c1::one}} of a finite number of states at any given time.&nbsp;<br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "opP2slY6aU", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video&nbsp;9<br /><br /><div>Given this contract<br /><br /><div><br /></div><div>contract CoinFlip {</div><div>&nbsp; &nbsp; // an enumerable value</div><div>&nbsp; &nbsp; // an enum is a fixed set of values that a variable can have</div><div>&nbsp; &nbsp; enum GameState {noWager, wagerMade, wagerAccepted}</div><div>&nbsp; &nbsp; // &nbsp;any other value that a variable of type GameState could have will be invalid</div><div>&nbsp; &nbsp; GameState public currentState;</div><div><br /></div><div>&nbsp; &nbsp; function CoinFlipper() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // initialize state</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // &nbsp;This is how you reference the value of an enumerable</div><div>&nbsp; &nbsp; &nbsp; &nbsp; currentState = GameState.noWager;</div><div>&nbsp; &nbsp; }</div><div><br /></div><div>&nbsp; &nbsp; function transitionGameState(bytes32 targetState) returns (bool) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if (targetState == \"noWager\") {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; currentState = GameState.noWager;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; else if (targetState == \"wagerMade\") {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; currentState = GameState.wagerMade;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; else if (targetState == \"wagerAccepted\") {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; currentState = GameState.wagerAccepted;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return true;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; &nbsp; &nbsp; return false;</div><div>&nbsp; &nbsp; } &nbsp;<br /><br /></div><div>newly deployed on testnet as deployed, what would be the return value of<br /><br />deployed.currentState.call()?<br /><br /><br />A:&nbsp;{ [String: '{{c1::0}}'] s: 1, e: 0, c: {{c1::[ 0 ]}} }</div><div>&nbsp;<br />Now, imagine that the transitionGameState method was called, specifying wagerMade as the next state<br /><br />deployed.transitionGameState(\"wagerMade\", {from: acct1})<br /><br />What return value will be received when calling currrentState?<br /><br />A:&nbsp;{ [String: '{{c1::1}}'] s: 1, e: 0, c: {{c1::[ 1 ]}} }<br /><br />What if something nonsensical like 'xyz' was passed in as an argument to transitionGameState?<br /><br />deployed.transitionGameState(\"xyz\", {from: acct1})&nbsp;<br /><br /><br />What will be the return value when calling currrentState?<br /><br />A:&nbsp;{ [String: '{{c1::1}}'] s: 1, e: 0, c: {{c1::[ 1 ]}} }<br /><br /><br /></div></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "IPQ~ed}LiR", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 9<br /><br />In Solidity, a {{c1::modifier}} is a way to make reusable code that you can put into function definitions that can ensure some form of data is valid before proceeding with the execution of that function.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "h8LR#8m[Dy", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 9<br /><br />A modifier can be defined by using the keyword {{c1::modifier}}.<br /><br />contract someContract {<br />&nbsp; &nbsp;{{c1::modifier}} someModifier() {}<br />}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "pqc1YjlZ_8", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 9<br /><br />Modifiers can be introduced to functions by {{c1::defining}} them on the function definitions<br /><br />contract someContract {<br />&nbsp; &nbsp; modifier someModifier() {}<br /><br /><br />&nbsp; function someFunction() {{c1::someModifier}}() &nbsp;{<br />&nbsp; &nbsp; &nbsp; return 'a string'<br />&nbsp; }<br />}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "sH^xizJNCw", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "<div><br /></div><div>contract Owned {</div><div>&nbsp; &nbsp; // &nbsp;the owned contract specifies a variable owner</div><div>&nbsp; &nbsp; address public owned;</div><div><br /></div><div>&nbsp; &nbsp; function Owned() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // on construction set the owner to the one who constructed the contract</div><div>&nbsp; &nbsp; &nbsp; &nbsp; owned = msg.sender</div><div>&nbsp; &nbsp; }</div><div>&nbsp; &nbsp; // shorthand function to label another function as only callable by the creator of the contract</div><div>&nbsp; &nbsp; modifier onlyOwner() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if(msg.sender === owner) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; }</div><div>}</div><div><div><br />The contract helloworld should only be callable by the owner of the contract.</div><div><br /></div><div>We see that the Owner contract specified above internally defines a modifier function onlyOwner that has that functionality. How would we make it so that the helloworld contract inherits the functionality of Owned?</div><br /></div><div>contract helloworld {{c1::is}} {{c1::Owned}} {</div><div>&nbsp; &nbsp; string public message;</div><div>&nbsp; &nbsp;</div><div>&nbsp; &nbsp; function setMessage(string _message) {{c1::onlyOwner}}() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; message = _message;</div><div>&nbsp; &nbsp; }</div><div>}</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "JA!h^lcysm", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "There are three important things to determine when modelling a finite state machine:<br /><ol type=\"1\" start=\"1\"><li>What are the {{c1::distinct}} states that your finite state machine can exist in?</li><li>What events are {{c1::exposed}} in each state? (You might have specific events that can only be called when the instance is in a specific state, and only some of these events will trigger a state transition to new state<br /></li><li>What {{c1::artifacts}} are going to be produced on transitions between states?</li></ol>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "xd;Qf+A}Zn", 
             "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
             "tags": []
         }
