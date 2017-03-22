@@ -57,7 +57,10 @@
     "dyn": 0, 
     "extendNew": 10, 
     "extendRev": 50, 
-    "media_files": [], 
+    "media_files": [
+        "paste-24442658882159.jpg", 
+        "paste-23304492548639.jpg"
+    ], 
     "name": "Ethereum", 
     "note_models": [
         {
@@ -241,7 +244,7 @@
             "__type__": "Note", 
             "data": "", 
             "fields": [
-                "**corresponds to video 3**<br /><br />It is impossible to statically analyze code and determine whether or not it will {{c1::terminate}} in finite time. This lead to the very real possibility that someone could issue {{c1::DDOS}} attacks against the Ethereum network by issuing infinite loops which peers would then attempt to determine whether the loops were infinite, wasting computational resources.", 
+                "**corresponds to video 3**<br /><br />It is impossible to statically analyze code and determine whether or not it will {{c1::terminate}} in finite time. This leads to the very real possibility of someone {{c1::DDOS}} attacking the Ethereum network by issuing infinite loops that peers would try to determine the infiniteness of, wasting computational resources.", 
                 ""
             ], 
             "flags": 0, 
@@ -834,6 +837,354 @@
             ], 
             "flags": 0, 
             "guid": "xd;Qf+A}Zn", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 11<br /><br />If you want to reference a contract that's not defined in the same file, you need to {{c1::include}} it by using the \"{{c1::import}}\" keyword followed by a string defining a relative or absolute path to the contract.<br /><br />NOTE: This method works only for the OS solidity compiler, and not the javascript compiler.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "H#&8L^F9eR", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 11<div><br /></div><div>Selfdestruct is a native {{c1::OPCODE}} to the EVM that terminates the existence of a contract on the Ethereum blockchain.<br /><br />Selfdestruct, used in the contract below, takes one argument, the contract owner's ethereum address and sends the contract's current balance to it, and terminates the contract.<br /><br /><br /><div>contract mortal {</div><div>&nbsp; &nbsp; address public owner;</div><div><br /></div><div>&nbsp; &nbsp; function mortal() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; owner = msg.sender;</div><div>&nbsp; &nbsp; }</div><div><br /></div><div><br /></div><div>&nbsp; &nbsp; modifier onlyOwner() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; if(msg.sender == owner) {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; }</div><div>&nbsp; &nbsp; }</div><div><br /></div><div>&nbsp; &nbsp; function kill() {</div><div>&nbsp; &nbsp; &nbsp; &nbsp; // destroy contract and send ether balance to owner's address</div><div>&nbsp; &nbsp; &nbsp; &nbsp; selfdestruct(owner);</div><div>&nbsp; &nbsp; }</div><div>}</div></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "vB2Ur8V.5$", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12<br /><br />The Ethereum blockchain is its own source of {{c1::truth}}. It encapsulates its own {{c1::state}} and knows absolutely nothing about the outside world. It has no native way to {{c1::communicate}} with it.<br /><br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "z*Qe{HDe:5", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12<br /><br /><div>{{c1::Oracle}} services are a reliable way of relaying data in a consistent way from the outside world onto the blockchain.</div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "mEd9i[Ptn#", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12&nbsp;<br /><br />You cannot create a self-{{c1::executing}} contract in Ethereum. Every contract {{c1::call}} has to be triggered by an outside {{c1::event}}.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "8^WKO@Wi6", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12&nbsp;<br /><br />In order to get information from the outside world, you have to call into a contract on the chain that has hardcoded into it knowledge about which {{c1::oracle}} service it wishes to use", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "OJR<[Y#c!~", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12<br /><br />The oracle service is responsible for interoperating with the outside world, getting whatever information it needs in a {{c1::reliable}} way and formatting it into a {{c1::consistent}} format. The oracle service will then need to call back into the Ethereum blockchain, so it will likely call a {{c1::callback}} function that is encoded into that contract.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "r:g;#E/?Ke", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12&nbsp;<br /><br />It's possible that a contract call that an {{c1::oracle}} makes into a contract is mined in a different {{c1::block}} than the initial contract call made to trigger the oracle service.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "HY@[wW{A|Q", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 12&nbsp;<br /><br />{{c1::Oraclize}} is a third party service that provides oracle functionality for the Ethereum blockchain.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "j#%aUaJNfl", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />The ENS ( {{c1::Ethereum Name Service}} ) is a service that lets you resolve {{c1::human}}-readable names to individual ethereum {{c1::addresses}}.<br /><br /><img src=\"paste-23304492548639.jpg\" /><br /><br /><br />ENS is similar to a Domain Name System, where that DNS lets you map something easy to remember (like github.com) and sends it to a DNS service that resolves it to an IP address and sends it across the network.<br /><br /><img src=\"paste-24442658882159.jpg\" />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "H&<HVLwTJ@", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />If you want to register a name with the ENS you have to go through what's called a Registrar contract.<br /><br />There are two types of registrar contracts: {{c1::First In First Served}} (FIFS) Registrars, and {{c1::Auction}} Registrars.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "f,mzQvU#{~", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />All .eth name purchases go through the {{c1::Auction}} Registrar to minimize domain name squatting", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "NY-]<Y.09j", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />When you register names with the ENS service, what's being stored isn't the name itself, but a {{c1::hash}} of the name.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "Ci^R?V&VyV", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />When you put an ethereum name up for auction, the auction will run for one week, except for the first week of ENS' release, where all auctions will run for {{c1::two}} weeks. Anybody can place a bid for the name.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "wDGx2ek_<E", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />In order to place a bid on a name, you need to call into the {{c1::newBid}} function of the {{c1::ethRegistrar}} contract and specify the maximum amount that you're willing to bid for the name. You also need to send ether. You can send more ether than you're willing to bid on the contract to help disguise what the amount of your actual bid is.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "yBYGe]VNOD", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 13<br /><br />During the last {{c1::24}} hours of an auction, all bids are {{c1::closed}}, and the {{c1::reveal}} period begins where anyone call into their contract and reveal the amount of their bid. The highest revealed bid during that bid period will win the name and the losers will get their ether back.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "lT5QrxtWk^", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 16<br /><br />A mapping is the Solidity construct for a {{c1::key}} {{c1::value}} store.<br /><br />mappings have the following syntax:<br /><br />mapping( {{c1::key}} type =&gt; {{c1::value}} type) identifier", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "jN2j`;@=4C", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 16<br /><br />One of the limitations of using mappings in Solidity is that theres no native way to {{c1::loop}} over the mapping and get the values out of it, but that's often something you want to do in your user interface.<br /><br />You can think of a Solidity mapping as having the entire address space already initialized. Also, every possible ethereum address is initialized with the value of 0.<br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "N2&G?j}JHc", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />There are two places where you store data in Ethereum -- chain {{c1::data}}, and the state {{c1::trie}}<br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "iJ)!Zr~V,h", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17&nbsp;<br /><br />Smart contracts can write to both chain data and state, but they can only read from {{c1::state}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "gQV10)=Py_", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />Writing to chain data costs 8 {{c1::gas}} per byte, whereas writing to state costs {{c1::625}} gas per byte", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "G-?E`8{-)b", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />Clients can read from both {{c1::chain data}} and state", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "G51-{[b=Z[", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />A more common use case than cheap data storage for writing to chain data is modelling {{c1::asynchronous}} event {{c1::triggers}}.<br /><br /><br />", 
+                "&lt;br&gt;<br />&lt;br&gt;<br />The client can pull constantly from chain data for very specific messages to be written, and if the contract writes that message to chain data, the client can fire off an {{c1::asynchronous}} event."
+            ], 
+            "flags": 0, 
+            "guid": "I9zP6rSI(h", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />The {{c1::indexed}} keyword can be attached to one or many fields in an event; it allows you to attach {{c1::listeners}} that listen for specific values of that field", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "MYhTrGVNXV", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 16<br /><br />If you want to gain access to the current amount of gas remaining in your contract call, you can get it by calling msg.{{c1::gas}}", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "pkRh3#H4IZ", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />LOG opcodes tell the contract to log data to {{c1::chain}} data. You won't see them unless you have {{c1::events}} in your contract.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "A>JX7dnJEu", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />logsBloom is a bloom filter - A bloom filter is a super fast and space efficient data structure used to check for {{c1::set}} membership.<br /><br />The space efficiency of a bloom filter comes at a cost. Bloom filters can tell you if an object is definitely not in a set, or if it is probably in a set, but it can't tell you if an object is definitely in a set. Also, items cannot ever be deleted from a bloom filter.<br /><br />", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "J2PTkyO8np", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />logsBloom lets the block know if any {{c1::events}} have been fired. We can set {{c1::listeners}} on the logsBloom header to see if an event we care about has been fired.", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "d+Sv0U.^eI", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "video 17<br /><br />If there is data written into the {{c1::logsBloom}} header, you can look inside the transactions and see the data that was written using web3.eth.getTransaction{{c1::Receipt}}(transactionHash).<div><br /></div>", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "zr@kjJp>$?", 
             "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
             "tags": []
         }
