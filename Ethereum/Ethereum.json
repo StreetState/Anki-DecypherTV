@@ -1187,6 +1187,30 @@
             "guid": "zr@kjJp>$?", 
             "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
             "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**TRUFFLE**<br /><br />{{c1::Migrations}} are Javascript files that help you deploy contracts to the Ethereum network.<br /><br />These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will {{c1::change}} over time.&nbsp;", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "Hbcda%h9NP", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
+        }, 
+        {
+            "__type__": "Note", 
+            "data": "", 
+            "fields": [
+                "**TRUFFLE**<br /><br />A {{c1::history}} of previously run migrations is recorded {{c1::on}}-chain through a special {{c1::Migrations}} contract", 
+                ""
+            ], 
+            "flags": 0, 
+            "guid": "N#&%OwBzu.", 
+            "note_model_uuid": "9b64ff0f-0868-11e7-9651-c46e1f132962", 
+            "tags": []
         }
     ]
 }

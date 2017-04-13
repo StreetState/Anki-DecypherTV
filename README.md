@@ -21,7 +21,7 @@
 **NOTE:** To browse the list of/install add-ons (plugins), select the Tools>Add-ons>Browse & Install menu item. You can also use Tools>Add-ons to check which add-ons are installed.
 
 
-#### How to upload changes
+## How to upload changes
 
 When you want to upload changes you've made to Github, you need to:
 
